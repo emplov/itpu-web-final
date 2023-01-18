@@ -1,7 +1,3 @@
-* {
-  margin: 0;
-  padding: 0; }
-
 @font-face {
   font-family: 'Source Sans Pro Bold';
   src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf"); }
@@ -14,6 +10,8 @@
   font-family: 'Oswald';
   src: url("../fonts/Oswald/Oswald-Regular.ttf"); }
 
+@use "sass:list";
+@use "sass:map";
 .container {
   padding-right: 1rem;
   padding-left: 1rem;
@@ -409,7 +407,7 @@ main {
       color: rgba(255, 255, 255, 0.4); }
     .footer .footer-block .footer-block-copyright {
       flex: 2;
-      align-items: end;
+      align-items: flex-end;
       display: flex; }
       .footer .footer-block .footer-block-copyright .footer-block-copyright__text {
         flex: 2;
@@ -430,3 +428,7 @@ main {
     text-align: center; }
     .footer .footer-block .footer-block-contact .footer-block-contact__address {
       margin-bottom: 18px; } }
+
+* {
+  margin: 0;
+  padding: 0; }

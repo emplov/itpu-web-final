@@ -1,4 +1,4 @@
-@import "kit/_variables";
+@import "kit/variables";
 
 .footer {
   background-color: #464547;
@@ -57,7 +57,7 @@
 
     .footer-block-copyright {
       flex: 2;
-      align-items: end;
+      align-items: flex-end;
       display: flex;
 
       .footer-block-copyright__text {
