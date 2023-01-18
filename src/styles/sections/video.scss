@@ -1,0 +1,59 @@
+@import "../kit/_variables";
+
+.video {
+  background-image: url("../images/video_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-position: center;
+
+  .video-block {
+    max-width: 450px;
+    margin: 0 auto;
+
+    .video-block__headline {
+      font-family: 'Oswald', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 64px;
+      text-align: center;
+      color: $ultra-white-color;
+      letter-spacing: 2px;
+    }
+
+    .video-block-button {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 55px 0;
+      
+      .video-block-button-background {
+        background-color: #39C2D7;
+        width: 145px;
+        height: 145px;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .video-block-button-background__button {
+          font-size: 60px;
+          color: $ultra-white-color;
+        }
+      }
+    }
+
+    .video-block-paragraph {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      color: $ultra-white-color;
+    }
+  }
+}

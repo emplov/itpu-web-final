@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all .3s;
+}
+
+@import "fonts";
+@import "utils";
+@import "main";
+@import "header";
+@import "header.mobile";
+@import "sections/sections";
+@import "footer";
+@import "footer.mobile";

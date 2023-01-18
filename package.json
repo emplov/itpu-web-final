@@ -1,0 +1,25 @@
+{
+  "name": "itpu-web-final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "node-sass src/styles/styles.scss src/assets/css/style.css",
+    "sass:watch": "node-sass -rw src/styles/styles.scss src/assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emplov/itpu-web-final.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emplov/itpu-web-final/issues"
+  },
+  "homepage": "https://github.com/emplov/itpu-web-final#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "postcss": "^8.4.21"
+  }
+}

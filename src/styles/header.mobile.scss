@@ -1,0 +1,48 @@
+@import "kit/_variables";
+
+@media screen and (min-width: 768px) {
+  .header {
+    .header-hamburger {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    .header-nav {
+      display: none;
+    }
+
+    .header-hamburger {
+      width: 32px;
+      float: right;
+      position: relative;
+      display: block;
+
+      .header-hamburger__checkbox {
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      .header-hamburger__lines {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+
+        .header-hamburger__lines___row {
+          width: 100%;
+          height: 2px;
+          background-color: $ultra-white-color;
+        }
+      }
+    }
+  }
+}
