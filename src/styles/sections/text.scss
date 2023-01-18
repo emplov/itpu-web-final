@@ -63,6 +63,12 @@
       border-radius: 18px;
       border: none;
       padding: 7px 20px;
+      transition: transform .4s ease-in-out;
+      transform-origin: left bottom;
+
+      &:hover {
+        transform: rotate(10deg);
+      }
     }
   }
 }
