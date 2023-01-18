@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "node-sass src/styles/styles.scss src/assets/css/style.css",
-    "sass:watch": "node-sass -rw src/styles/styles.scss src/assets/css/style.css"
+    "compile:watch": "node-sass -rw src/styles/styles.scss src/assets/css/style.css"
   },
   "repository": {
     "type": "git",

@@ -10,37 +10,110 @@
 
 @media screen and (max-width: 768px) {
   .header {
-    .header-nav {
-      display: none;
-    }
+    .header-block {
+      display: flex;
+      justify-content: space-between;
 
-    .header-hamburger {
-      width: 32px;
-      float: right;
-      position: relative;
-      display: block;
-
-      .header-hamburger__checkbox {
-        position: absolute;
-        display: block;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 5;
-        opacity: 0;
-        cursor: pointer;
+      .header-nav {
+        display: none;
       }
 
-      .header-hamburger__lines {
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
+      .header-logo {
+        position: relative;
+      }
 
-        .header-hamburger__lines___row {
-          width: 100%;
-          height: 2px;
+      .header-hamburger {
+        width: 20px;
+        position: relative;
+        display: block;
+
+        .header-hamburger-nav {
+          transform: scale(0);
+          position: fixed;
+          width: 100vw;
+          height: 100vh;
           background-color: $ultra-white-color;
+          top: 0;
+          left: 0;
+          z-index: 4;
+          transition: transform .4s ease-in-out;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .header-hamburger-nav__link {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 48px;
+            text-decoration: none;
+            color: #000000;
+          }
+        }
+
+        .header-hamburger__checkbox:checked ~ .header-hamburger-nav {
+          transform: scale(1);
+        }
+
+        .header-hamburger__checkbox:checked ~ .header-hamburger__lines .header-hamburger__lines___row {
+          background-color: #000000;
+        }
+
+        .header-hamburger__checkbox:checked ~ .header-hamburger__lines .header-hamburger__lines__first-line {
+          transform: rotate(45deg);
+        }
+
+        .header-hamburger__checkbox:checked ~ .header-hamburger__lines .header-hamburger__lines__second-line {
+          transform: scaleY(0);
+        }
+
+        .header-hamburger__checkbox:checked ~ .header-hamburger__lines .header-hamburger__lines__third-line {
+          transform: rotate(-45deg);
+        }
+
+        .header-hamburger__checkbox {
+          position: absolute;
+          display: block;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          z-index: 6;
+          opacity: 0;
+          cursor: pointer;
+        }
+
+        .header-hamburger__lines {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+          position: absolute;
+          width: 20px;
+          z-index: 5;
+
+          .header-hamburger__lines___row {
+            width: 100%;
+            height: 2px;
+            background-color: $ultra-white-color;
+            transition: background-color .4s ease-in-out;
+          }
+
+          .header-hamburger__lines__first-line {
+            transform-origin: 0% 0%;
+            transition: transform 0.4s ease-in-out;
+          }
+
+          .header-hamburger__lines__second-line {
+            transition: transform 0.2s ease-in-out;
+          }
+
+          .header-hamburger__lines__third-line {
+            transform-origin: 0% 100%;
+            transition: transform 0.4s ease-in-out;
+          }
         }
       }
     }
