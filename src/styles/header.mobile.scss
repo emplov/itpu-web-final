@@ -1,4 +1,5 @@
 @import "kit/variables";
+@import "kit/mixins";
 
 @media screen and (min-width: 768px) {
   .header {
@@ -43,11 +44,8 @@
           align-items: center;
 
           .header-hamburger-nav__link {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-style: normal;
-            font-weight: 600;
+            @include source-sans-pro-font(normal, 600, 48px, inherit);
             text-transform: uppercase;
-            font-size: 48px;
             text-decoration: none;
             color: #000000;
           }

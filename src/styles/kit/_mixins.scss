@@ -1,0 +1,22 @@
+@mixin oswald-font($font-style, $font-weight, $font-size, $line-height) {
+  font-family: 'Oswald', sans-serif;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin source-sans-pro-font($font-style, $font-weight, $font-size, $line-height) {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin section-background($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

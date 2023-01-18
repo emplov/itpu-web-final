@@ -1,24 +1,19 @@
+@import "../kit/variables";
+@import "../kit/mixins";
+
 .description {
   padding-top: 60px;
   padding-bottom: 60px;
 
   .description__headline {
-    font-family: 'Oswald', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 64px;
+    @include oswald-font(normal, 700, 48px, 64px);
     text-align: center;
     color: #464547;
     letter-spacing: 2px;
   }
 
   .description__paragraph {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
+    @include source-sans-pro-font(normal, 400, 24px, 32px);
     text-align: center;
     color: #666666;
     letter-spacing: 2px;
@@ -35,12 +30,8 @@
 
     .description-text__item {
       flex: 1;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 22px;
       color: #666666;
+      @include source-sans-pro-font(normal, 400, 16px, 22px);
     }
   }
   .description-button {
@@ -51,15 +42,11 @@
     margin-top: 39px;
 
     .description-button__button {
-      font-family: 'Oswald', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 26px;
+      @include oswald-font(normal, 400, 14px, 26px);
       text-align: center;
       letter-spacing: 0.1em;
-      color: #FFFFFF;
-      background: #55C2D8;
+      color: $ultra-white-color;
+      background: $read-more-button-color;
       border-radius: 18px;
       border: none;
       padding: 7px 20px;

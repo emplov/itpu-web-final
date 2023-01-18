@@ -1,4 +1,5 @@
 @import "kit/variables";
+@import "kit/mixins";
 
 .header {
   width: 100%;
@@ -18,11 +19,7 @@
     position: absolute;
 
     .header-logo__text {
-      font-family: 'Source Sans Pro', sans-serif;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
-      line-height: 16px;
+      @include source-sans-pro-font(normal, 600, 20px, 16px);
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: $ultra-white-color;
@@ -38,11 +35,7 @@
     justify-content: center;
 
     .header-nav__link {
-      font-family: 'Source Sans Pro', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 16px;
+      @include source-sans-pro-font(normal, 400, 14px, 16px);
       letter-spacing: 0.2em;
       color: $ultra-white-color;
       text-transform: uppercase;

@@ -1,9 +1,8 @@
 @import "../kit/variables";
+@import "../kit/mixins";
 
 .intro {
-  background-size: cover;
-  background-image: url("../images/header/background.png");
-  background-repeat: no-repeat;
+  @include section-background("../images/header/background.png");
   width: 100%;
 
   display: flex;
@@ -31,22 +30,14 @@
     }
 
     .intro_block__headline {
-      font-family: 'Oswald', sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 64px;
+      @include oswald-font(normal, 700, 48px, 64px);
       text-align: center;
       color: $ultra-white-color;
       letter-spacing: 2px;
     }
 
     .intro_block__sub-headline {
-      font-family: 'Source Sans Pro', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 32px;
+      @include source-sans-pro-font(normal, 400, 24px, 32px);
       text-align: center;
       letter-spacing: 1px;
       color: rgba(255, 255, 255, 0.7);
