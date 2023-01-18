@@ -321,7 +321,7 @@ main {
       display: flex;
       justify-content: center;
       margin: 55px 0; }
-      .video .video-block .video-block-button .video-block-button-background {
+      .video .video-block .video-block-button .video-block-button__button {
         background-color: #39C2D7;
         width: 145px;
         height: 145px;
@@ -329,8 +329,9 @@ main {
         position: relative;
         display: flex;
         justify-content: center;
-        align-items: center; }
-        .video .video-block .video-block-button .video-block-button-background .video-block-button-background__button {
+        align-items: center;
+        border: none; }
+        .video .video-block .video-block-button .video-block-button__button .video-block-button__button__icon {
           font-size: 60px;
           color: #FFFFFF; }
     .video .video-block .video-block-paragraph {

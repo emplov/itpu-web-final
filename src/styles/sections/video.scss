@@ -29,7 +29,7 @@
       justify-content: center;
       margin: 55px 0;
       
-      .video-block-button-background {
+      .video-block-button__button {
         background-color: #39C2D7;
         width: 145px;
         height: 145px;
@@ -38,8 +38,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        border: none;
 
-        .video-block-button-background__button {
+        .video-block-button__button__icon {
           font-size: 60px;
           color: $ultra-white-color;
         }
